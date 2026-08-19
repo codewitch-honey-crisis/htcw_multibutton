@@ -1,0 +1,25 @@
+{
+    "name": "htcw_multibutton",
+    "version": "0.1.0",
+    "description": "Implements a button handler that can report multiple successive clicks and long clicks",
+    "keywords": ["input", "button"],
+    "authors": {
+        "name":"honey the codewitch",
+        "homepage": "https://www.codeproject.com/Members/code-witch"
+    },
+    "license": "MIT",
+    "frameworks": "*",
+    "platforms": "*",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/codewitch-honey-crisis/htcw_multibutton.git"
+    },
+    "export": {
+        "exclude":
+        [
+            ".vscode/*.*",
+            "lib/*.*",
+            "build/*.*"
+        ]
+    }
+}

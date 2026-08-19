@@ -1,0 +1,6 @@
+version: "0.1.0"
+description: "Implements a button handler that can report multiple successive clicks and long clicks"
+dependencies:
+  idf:
+    version: ">=5.0.0"
+  
