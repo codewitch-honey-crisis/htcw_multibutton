@@ -119,6 +119,7 @@ void app_main(void) {
     bool old_pressed = false;
     while(1) {
         if(xTaskGetTickCount()>=wdt_ts+pdMS_TO_TICKS(200)) {
+            wdt_ts = xTaskGetTickCount();
             vTaskDelay(5);
         }
         bool pressed = !gpio_get_level(GPIO_NUM_35);
@@ -164,6 +165,7 @@ void app_main(void) {
     bool old_pressed = false;
     while(1) {
         if(xTaskGetTickCount()>=wdt_ts+pdMS_TO_TICKS(200)) {
+            wdt_ts = xTaskGetTickCount();
             vTaskDelay(5);
         }
         bool pressed = !gpio_get_level(GPIO_NUM_35);
